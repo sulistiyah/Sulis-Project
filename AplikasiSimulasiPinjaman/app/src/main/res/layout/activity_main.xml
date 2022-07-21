@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama"
+        android:text="Nama"
+        android:textSize="20dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerHorizontal="false"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:id="@+id/txt_nama">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_brg"
+        android:id="@+id/txt_pembelian"
+        android:text="Jumlah Pembelian"
+        android:textSize="20dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txt_jpembelian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pembelian"
+        android:layout_centerHorizontal="false"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_jpembelian"
+        android:id="@+id/txt_bttn"
+        android:text="HITUNG PEMBAYARAN">
+    </Button>
+
+</RelativeLayout>

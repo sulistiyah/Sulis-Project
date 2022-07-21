@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sulis.sulistiyah">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Aldo Spama Putra Suir"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SulisTiyah">
+        <activity
+            android:name=".SQLite.FormMhsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".SQLite.SqLiteActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".TabLayout.TabActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu.MainMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerView.HPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerView.LaptopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListView.BaseAdapterActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ListView.ArrayAdapterExamDuaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListView.ArrayAdapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

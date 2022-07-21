@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sulis Tiyah - 2B</string>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="kategori">
+        <item>WEB</item>
+        <item>Dekstop</item>
+        <item>Android</item>
+        <item>Jaringan</item>
+        <item>Lain-Lain</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Tersedia</item>
+        <item>Dipinjam</item>
+    </string-array>
+
+</resources>

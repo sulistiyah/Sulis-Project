@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/hp1">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvNamaHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/imgView"
+        android:layout_toRightOf="@+id/imgView"
+        android:paddingTop="10dp"
+        android:text="Nama HP"
+        android:textSize="15sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaHP"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imgView"
+        android:layout_toRightOf="@+id/imgView"
+        android:text="Harga HP"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:textStyle="italic">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSpekHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHarga"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imgView"
+        android:layout_toRightOf="@+id/imgView"
+        android:text="Spesifikasi"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvTahunHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSpekHP"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imgView"
+        android:layout_toRightOf="@+id/imgView"
+        android:text="Tahun HP"
+        android:textSize="14sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvTahunHP"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/purple_700"
+        android:visibility="visible">
+    </View>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/nama">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="NIM"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/nim">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/nim"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Alamat"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/alamat">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/email">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/password">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/confirmPassword">
+    </EditText>
+
+    <CheckBox
+        android:layout_below="@id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Saya setuju dengan segala ketentuan dan syarat yang berlaku"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:id="@+id/checkbox">
+    </CheckBox>
+
+    <TextView
+        android:layout_below="@id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dummyView">
+    </TextView>
+
+    <Button
+        android:layout_below="@id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dummyView"
+        android:text="Kirim"
+        android:backgroundTint="@android:color/holo_purple"
+        android:id="@+id/submit">
+    </Button>
+
+    <Button
+        android:layout_below="@id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dummyView"
+        android:text="Batal"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:id="@+id/cancel">
+    </Button>
+
+
+
+
+</RelativeLayout>

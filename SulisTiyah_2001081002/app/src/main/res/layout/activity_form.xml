@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="190dp"
+        android:text="Aplikasi Akademik PNP"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/Judul">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <EditText
+        android:layout_below="@id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/usernameField">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/usernameField"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="NIM"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/emailField">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/passwordField">
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textSize="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/confirmpasswordField">
+    </EditText>
+
+    <RadioGroup
+        android:layout_below="@+id/confirmpasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg_gender">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+        </View>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Laki-Laki"
+            android:textColor="@android:color/black"
+            android:id="@+id/rb_male">
+        </RadioButton>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+        </View>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Perempuan"
+            android:textColor="@android:color/black"
+            android:id="@+id/rb_female">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_below="@id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dummyView">
+    </TextView>
+
+    <Button
+        android:layout_below="@id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dummyView"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="Login"
+        android:id="@+id/submit">
+    </Button>
+
+    <Button
+        android:layout_below="@id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dummyView"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Register"
+        android:id="@+id/register">
+    </Button>
+
+
+
+</RelativeLayout>
